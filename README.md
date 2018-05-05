@@ -12,11 +12,6 @@ Steps:
  4. Ranking the results
 
 
-```bash
-git clone https://github.com/vamshi-indla/Document_Retrieval.git
-cd Document_Retrieval
-./env_setup.sh
-```
 
 ### [Content](#content)
 
@@ -38,6 +33,14 @@ cd Document_Retrieval
 * [References](#references)
 
 ---
+## Setup Instructions
+
+The code of SSE toolkit support both python2 and python3. Just issue below command to download the repo and install dependencies such as tensorflow.
+```bash
+git clone https://github.com/vamshi-indla/Document_Retrieval.git
+cd Document_Retrieval
+./env_setup.sh
+```
 
 
 * **rawdata-ranking**: 
