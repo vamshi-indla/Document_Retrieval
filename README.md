@@ -42,6 +42,22 @@ cd Document_Retrieval
 ./env_setup.sh
 ```
 
+## Expanding the Query
+1. User inputs query in natural language.
+2. Use tools like StanfordParser to identify the noun phrases and other grammar in the query.
+3. Related synonym sets of various words in the query are also obtained from Ontology and Word Net API.
+4. Add these words to the original query and form the new query.
+5. The queries formed will be more refined and are sent to Search API which fetches the results related to the user query. Following diagram depicts the same: image
+
+### Example run
+Step 1 - User Query: name of football clubs in EEFA.
+Step 2 - Parsed words for this user query using Stanford Parser: 
+
+Step 3 - Word Net and Ontology Synonym words: list, soccer
+Step4 - Expanded Query: Name or list the football Soccer clubs in EEFA
+
+### Advantages of semantic search over traditional keyword search:
+Tradional keyword search will not be able to understand the difference between: USA Players in Catalan basket team Vs Catalan Palyers in USA teams. Such cases are not a problem for semantic search.
 
 * **rawdata-ranking**: 
 
@@ -58,3 +74,4 @@ cd Document_Retrieval
   ```
 ## References
 https://github.com/eBay/Sequence-Semantic-Embedding
+https://spoddutur.github.io/my-notes/semantic-search-2.html
