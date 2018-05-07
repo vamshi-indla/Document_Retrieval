@@ -1,23 +1,20 @@
 # Document_Retrieval
 
-Proof of concept to retrieve documents belonging to a domain.
-
-
-
+Proof of concept to retrieve documents belonging to a domain. ~300 Documents are converted from ppt to text and then document retrieval is performed on it using traditional and semantic search methods. It is work in progress project. 
 
 ### [Content](#content)
 
-* [Setup Instructions](#setup-instructions)
-* [Traditional Method for Document Retrieval](## Traditional Method for Document Retrieval)
-    * [Approach](### Approach)
-    * [Disadvantages](### Disadvantages)
-*  [Semantic Search](## Semantic Search)
-    * [Approach](###Approach)
-    * [Expanding the Query](###  Expanding the Query
-    * [Advantages of semantic search over traditional keyword search](### Advantages of semantic search over traditional keyword search)
-*  [Usecases](## Usecases)
-*  [Further Reading](## Further Reading)
-*  [References](## References)
+* [Setup Instructions] 
+* [Traditional Method for Document Retrieval] 
+    * [Approach] 
+    * [Disadvantages] 
+*  [Semantic Search] 
+    * [Approach] 
+    * [Expanding the Query] 
+    * [Advantages of semantic search over traditional keyword search] 
+*  [Usecases] 
+*  [Further Reading] 
+*  [References] 
 
 ---
 ## Setup Instructions
@@ -131,5 +128,7 @@ Attention Model(2014)
     
 ## References
 https://github.com/eBay/Sequence-Semantic-Embedding
+
 https://spoddutur.github.io/my-notes/semantic-search-2.html
+
 https://opensourceconnections.com/blog/2013/08/25/semantic-search-with-solr-and-python-numpy/ (collabarative filtering search)
