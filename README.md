@@ -8,6 +8,7 @@ Steps:
 2. Index the documents using inverse-index
 3. Query the search terms
   3.1 Keyword search
+  3.2 Collabrative filtering approach
   3.2 Semantic search
  4. Ranking the results
 
@@ -41,6 +42,30 @@ git clone https://github.com/vamshi-indla/Document_Retrieval.git
 cd Document_Retrieval
 ./env_setup.sh
 ```
+## Traditional Method for Document Retrieval:
+Searching is done in four stages in classical search engines:
+
+Document indexing: Simply index documents :)
+Term weighting: Importance of the terms used within the document are calculated with the help of term frequency.
+Similarity coefficients: Documents and queries are represented by vectors of term weight.
+Retrieval: Retrieval is done by cosine similarity.
+
+### Disadvantages
+Term mismatch is the most concerning problem for effective information retrieval. In that, there are multiple kinds of problems namely:
+
+1. Vocabulary problem:
+The words on which the documents are indexed (vs) the words in user query are not same
+2. Synonymy:
+Same words different meanings (Ex: “apple” as company [vs] fruit)
+Synonymy may result in a failure to retrieve relevant documents
+Decreases Recall
+3. Polysemy:
+Different words with same meaning (Ex: “television” and “tv”)
+Polysemy may cause retrieval of erroneous or irrelevant documents
+Decreases Precision of retrieval.
+4. Hypernymy and Hyponymy:
+
+
 
 ## Expanding the Query
 1. User inputs query in natural language.
@@ -72,6 +97,32 @@ Tradional keyword search will not be able to understand the difference between: 
   ```
   air jordan 12 gs dynamic pink	Item#876583|Item#439598|Item#563089|Item#709305|Item#460164|Item#45300|Item#791751|Item#523586|Item#275794|Item#516742|Item#444557|Item#700634|Item#860517|Item#775042|Item#731907|Item#852612|Item#877692|Item#453434|Item#582210|Item#200407|Item#196434
   ```
+ ## Future
+ 
+The next release of InvertedIndex will contain support for proximity searching, which is the ability to search for keywords "near" each other in the indexed document. For instance, a search for the words "Python" and "rules" would return a document containing,
+Everybody knows that Python rules!
+but not a document containing,
+Python! Everybody knows that rules!
+
+t-SNE 300D to 2D for visualiztion
+Transfer Learning and Word Embedding.
+Word2vec (2013) and SVD?
+- CBOW
+- Skip Gram with negative Sampling
+Glove (2014)
+
+Usecases:
+> Analogies
+> Predicting next word, using sequence modeling
+> Fill up the blanks :)
+> Sentiment Analysis
+
+Similarities
+> Cosine 
+> Wordmoverdistance
+> Euclidean Distances
+
 ## References
 https://github.com/eBay/Sequence-Semantic-Embedding
 https://spoddutur.github.io/my-notes/semantic-search-2.html
+https://opensourceconnections.com/blog/2013/08/25/semantic-search-with-solr-and-python-numpy/ (collabarative filtering search)
